@@ -28,9 +28,35 @@
 // =book
 // 	font-family: "book", Arial, sans-serif
 
+//media
+
+=r1
+	@media only screen and (max-width: "600px")
+		@content
+
+//fonts
+
++font("HelveticaNeue Regular", helveticaneuecyr-roman)
++font("HelveticaNeue Medium", helveticaneuecyr-medium)
++font("HelveticaNeue Bold", helveticaneuecyr-bold)
+
+=reg
+	font-family: "HelveticaNeue Regular", Arial, sans-serif 
+=med
+	font-family: "HelveticaNeue Medium", Arial, sans-serif 
+=bold
+	font-family: "HelveticaNeue Bold", Arial, sans-serif 
+
+//min-reset
 body
-	font-family: Arial, sans-serif
+	+reg
 	font-size: 12px
 	line-height: 1.4
-	
-// common blocks
+	&.is-active
+		overflow-y: scroll
+		position: fixed
+		width: 100%
+h1, h2, h3, h4, h5, h6, strong, b
+	font-weight: normal
+a
+	text-decoration: none

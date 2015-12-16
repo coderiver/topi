@@ -1,1 +1,270 @@
-// Normally mainpage styles
+.main
+	min-width: 320px
+	max-width: 800px
+	height: 100%
+	margin: 0 auto 
+	position: relative
+	&_index
+		background: url(../img/background.jpg)
+		+cover
+		text-align: center
+		.container
+			padding: 37px 0 0 
+			background: url(../img/bg-main.png)
+			+cover
+			background-position: 33% 100%
+.container
+	min-height: 100%
+	margin-bottom: -82px
+	position: relative
+	background: #f7eac8
+	+r1
+		margin-bottom: -41px 
+	&:after
+		content: "" 
+		display: block
+		height: 82px
+		+r1
+			height: 41px
+.big-logo
+	display: inline-block
+	vertical-align: top
+	font-size: 0
+	max-width: 85% 
+	img
+		max-width: 100%
+.btn-play
+	display: block
+	margin: 0 auto
+	font-size: 0 
+	position: absolute
+	bottom: 82px
+	left: 50%
+	margin-left: -158px
+	width: 317px
+	box-shadow: 3.5px 6.1px 16px rgba(13, 13, 11, 0.59)
+	border-radius: 60px
+	+r1
+		width: 160px
+		margin-left: -80px
+		bottom: 50px
+		box-shadow: 1.7px 3px 8px rgba(13, 13, 11, 0.59)
+		border-radius: 30px
+	img
+		width: 100%
+.header
+	background: #79251f
+	&__main
+		padding: 54px 38px 52px 17px 
+		+clr
+		+r1
+			padding: 27px 19px 26px 10px 
+.btn-menu
+	float: right
+	width: 52px
+	border-top: 8px solid #fff
+	border-bottom: 8px solid #fff
+	padding: 5px 0 
+	background: none
+	cursor: pointer
+	position: relative
+	z-index: 50
+	margin-top: 6px
+	+r1
+		border-width: 4px
+		padding: 3px 0
+		width: 26px
+		margin-top: 2px
+	span
+		height: 8px
+		display: block
+		background: #fff 
+		+r1
+			height: 4px
+.logo
+	float: left
+	max-width: 82%
+	img
+		max-width: 100%
+.footer
+	text-align: center
+	height: 82px
+	background: rgba(#010101, 0.7)
+	position: relative
+	z-index: 10 
+	+r1
+		height: 41px
+	&_index
+		background: none
+	&__list
+		font-size: 0
+		padding: 33px 0 
+		+r1
+			padding: 16px 0
+		li
+			display: inline-block
+			padding: 0 7px 
+			+r1
+				padding: 0 4px 
+		a
+			color: white
+			font-size: 16px
+			line-height: 1
+			+r1
+				font-size: 9px
+			&:hover
+				text-decoration: underline
+
+.category
+	clear: both
+	padding: 6px 0 0 
+	+r1
+		padding: 3px 0 0 
+	&__title
+		+bold
+		font-size: 29px
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		line-height: 1 
+		margin-bottom: 35px
+		+r1
+			font-size: 14px
+			margin-bottom: 18px
+
+.tabs
+	font-size: 0
+	text-align: center
+	li
+		display: inline-block
+		vertical-align: top
+		padding: 0 2px 
+		+r1
+			padding: 0 1px 
+		a
+			font-size: 25px
+			color: white
+			line-height: 1
+			padding: 11px 17px 12px 
+			display: inline-block
+			border: 2px solid rgba(#f7eac8, 0.2)
+			border-bottom: none
+			border-radius: 2px 2px 0 0
+			+r1
+				font-size: 13px
+				padding: 6px 9px 6px 
+			&.is-active
+				background: #f7eac8
+				border-color: #f7eac8
+				color: #792420
+
+.section
+	font-size: 0
+.items
+	text-align: center
+	padding: 30px 0 50px 
+	margin: 0 auto 
+	+r1
+		padding: 15px 0 25px 
+		max-width: 320px
+.item
+	padding: 28px 19px 
+	width: 288px
+	display: inline-block
+	vertical-align: top
+	text-align: center
+	+r1
+		padding: 14px 10px
+		width: 50%
+	&__img
+		img
+			width: 100%
+			border-radius: 50%
+	&__play
+		width: 133px
+		display: block
+		margin: -46px auto 0
+		+r1
+			width: 66px
+			margin-top: -23px
+		img
+			width: 100%
+			display: block
+	&__title
+		color: #450600
+		font-size: 22px
+		+med
+		line-height: 1
+		text-transform: uppercase
+		padding: 16px 0 0 
+		+r1
+			font-size: 11px
+			padding: 8px 0 0 
+
+.menu
+	position: fixed
+	top: 0
+	bottom: 0
+	right: 0
+	background-color: #5a2523
+	width: 406px
+	z-index: 30
+	padding: 150px 105px 30px 60px
+	overflow: auto
+	transform: translateX(100%)
+	transition: transform 0.3s
+	+r1
+		width: 203px
+		padding: 75px 50px 15px 30px 
+	&.is-active
+		transform: translateX(0)
+	&__list
+		a
+			font-size: 30px
+			text-transform: uppercase
+			line-height: 80px
+			color: white
+			border-bottom: 2px solid rgba(#e7e7e7, 0.1)
+			display: block
+			+r1
+				font-size: 15px
+				line-height: 40px
+				border-width: 1px 
+			&.is-active, &:hover
+				color: #fbd262
+
+.articles
+	color: #100e10
+	padding: 35px 50px 60px
+	+r1
+		padding: 18px 25px 30px
+	h3, h4
+		line-height: 1
+		+med
+		margin-bottom: 25px
+		+r1
+			margin-bottom: 12px
+	h3
+		font-size: 28px
+		text-transform: uppercase
+		+r1
+			font-size: 14px
+	h4
+		font-size: 24px
+		+r1
+			font-size: 12px
+	p
+		font-size: 20px
+		line-height: 1.6
+		+r1
+			font-size: 10px
+		a
+			color: #792420
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+
+.article
+	padding: 24px 0
+	+r1
+		padding: 12px 0 
